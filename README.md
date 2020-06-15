@@ -2,26 +2,26 @@
 
 >Docker images for [reveal.js]
 
-## Build
-
-```bash
-docker build -t nshine/reveal.js-docker:4.0.2
-```
-
 ## Run
 
 ```bash
 docker run -p 8080:8080 nshine/reveal.js
 ```
 
-## Dev Image
+## Develop
 
 The `dev` image variant is for running with hot-reloading.
 
 ```bash
-docker run -v $(pwd)/index.js:/reveal.js/index.js
-```
+cd dev
+docker-compose up
 
-## 
+# or
+docker run \
+  -v $(pwd)/index.html:/reveal.js/index.html \
+  -v $(pwd)/images:/reveal.js/images \
+  -p 8000:8000 -p 35729:35729 \
+  nshine/reveal.js:dev
+```
 
 [reveal.js]:https://github.com/hakimel/reveal.js/

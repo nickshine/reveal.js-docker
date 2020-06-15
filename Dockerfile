@@ -1,4 +1,4 @@
-FROM nshine/reveal.js:4.0.2-dev AS builder
+FROM nshine/reveal.js:dev AS builder
 
 FROM nginx:1.19-alpine
 
