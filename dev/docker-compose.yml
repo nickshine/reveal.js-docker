@@ -1,0 +1,12 @@
+version: "3"
+services:
+  reveal.js:
+    image: reveal.js
+    build: .
+    ports:
+      - "8000:8000"
+      - "35729:35729"
+    #volumes:
+      #- ./index.html:/reveal.js/index.html
+      #- ./css/main.css:/reveal.js/css/main.css
+      #- ./images:/reveal.js/images

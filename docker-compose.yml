@@ -1,0 +1,6 @@
+version: "3"
+services:
+  reveal:
+    image: nshine/reveal.js
+    ports:
+      - "8080:8080"
