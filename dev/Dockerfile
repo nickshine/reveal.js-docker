@@ -6,6 +6,7 @@ RUN cd /tmp \
   && curl -sLo reveal.js.tar.gz https://github.com/hakimel/reveal.js/archive/${RELEASE}.tar.gz \
   && tar -xzf reveal.js.tar.gz \
   && mv reveal.js-4.0.2 /reveal.js \
+  && cd /reveal.js \
   && npm install \
   && npm cache clean --force \
   && rm /tmp/*.gz
