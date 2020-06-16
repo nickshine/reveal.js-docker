@@ -1,5 +1,7 @@
 # reveal.js-docker
 
+![ ](logo.png)
+
 >Docker images for [reveal.js]
 
 ## Run
