@@ -1,4 +1,4 @@
-<p align="center"><img src="logo.png"></p>
+<p align="center"><img width="500" src="logo.png"></p>
 
 # reveal.js-docker
 
